@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu, sans-serif;
+}
+body{
+    background: url('../imagens/fundo.jpg') no-repeat;
+    background-size: cover;
+}
+
+/*INICIO HEADER*/
+#cabecalho{
+    display: flex;
+    position: relative;
+    height: 70px;
+}
+.img-logo{
+    width: 130px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.menu-header{
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+.nav-header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 13px;
+}
+.nav-header li a{
+    text-decoration: none;
+    color: white;
+    right: 10px;
+}
+.nav-header li a:hover{
+    font-size: 19px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #0f79af;
+}
+.search{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 19px;
+    right: 95px;
+    filter: invert(1);
+}
+.perfil-logo{
+    width: 33px;
+    position: absolute;
+    top: 15;
+    right: 40;
+}
+/*FIM HEADER*/
+
+/*INICIO MAIN*/
+#conteudo{
+    position: relative;
+    display: flex;
+    height: 71%;
+}
+.theboys{
+    width: 280px;
+    height: 170px;
+    position: absolute;
+    top: 20;
+    left: 25;
+}
+.nav-main ul{
+    position: absolute;
+    top: 220;
+    left: 25;
+    margin-right: 20px;
+
+}
+.nav-main li{
+    display:inline-block;
+    padding: 15px 25px;
+    margin-right: 20px;
+    border-bottom: 2px solid white;
+    background-color: #252E39;
+    color: white;
+    width: 150px;
+}
+.sinopse{
+    position: absolute;
+    top: 285;
+    left: 25;
+    width: 600px;
+    color: white;
+}
+.btn-play{
+    filter: invert(1);
+    position: absolute;
+    top: 425;
+    left: 60;
+    width: 25px;
+    z-index: 1;
+}
+.assistir{
+    display: flex;
+    position: absolute;
+    top: 410;
+    left: 25;
+    width: 200px;
+    border-bottom: 2px solid white;
+    padding: 7px 50px 7px 20px;
+    background-color: #0F79AF;
+    color: white;
+    text-align: justify;
+    justify-content: flex-end;
+    font-weight: 500;
+    border-radius: 3px;
+}
+/*FIM MAIN*/
+/*INICIO FOOTER*/
+footer .galeria-boys{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 23em;
+    margin-top: 10px;
+}
+footer .galeria-boys .img-footer{
+    height: 170px;
+    max-width: 350px;
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+footer .galeria-boys .img-footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-boys .img-footer:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+.galeria-boys .img-footer:hover ~ .img-footer{
+    transform: translateX(140px);
+}
+/*FIM FOOTER*/
